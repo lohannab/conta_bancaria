@@ -42,39 +42,39 @@ export function main() {
         switch (opcao) {
             case 1:
                 console.log("\n\nCriar Conta\n\n");
-
+                keyPress()
                 break;
             case 2:
                 console.log("\n\nListar todas as Contas\n\n");
-
+                keyPress()
                 break;
             case 3:
                 console.log("\n\nConsultar dados da Conta - por número\n\n");
-
+                keyPress()
                 break;
             case 4:
                 console.log("\n\nAtualizar dados da Conta\n\n");
-
+                keyPress()
                 break;
             case 5:
                 console.log("\n\nApagar uma Conta\n\n");
-
+                keyPress()
                 break;
             case 6:
                 console.log("\n\nSaque\n\n");
-
+                keyPress()
                 break;
             case 7:
                 console.log("\n\nDepósito\n\n");
-
+                keyPress()
                 break;
             case 8:
                 console.log("\n\nTransferência entre Contas\n\n");
-
+                keyPress()
                 break;
             default:
                 console.log("\nOpção Inválida!\n");
-
+                keyPress()
                 break;
         }
 
@@ -89,5 +89,10 @@ function sobre(): void {
     console.log("*****************************************************");
 }
 
+function keyPress(): void {
+    console.log(colors.reset, "");
+    console.log("\nPressione enter para continuar...");
+    readlinesync.prompt();
+}
 
 main();
