@@ -1,27 +1,35 @@
-# Dependências do Node
-node_modules/
-
-# Arquivos de ambiente
-.env
-.env.local
+/dist
+/node_modules
+nodemon.json
 
 # Logs
+logs
 *.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
-# Build/output (caso use depois)
-dist/
-build/
-
-# Cobertura de testes (caso use)
-coverage/
-
-# Sistema operacional
+# OS
 .DS_Store
-Thumbs.db
 
-# Configurações de editor/IDE
-.vscode/
-.idea/
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
