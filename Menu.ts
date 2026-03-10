@@ -4,10 +4,10 @@ import { colors } from "./src/util/Colors";
 export function main() {
     let opcao: number;
 
-    do {
+    while(true){
 
         console.log(colors.bg.black, colors.fg.yellow,
-                    "*****************************************************");
+            "*****************************************************");
         console.log("                                                     ");
         console.log("                 Banco do Brazil com Z               ");
         console.log("                                                     ");
@@ -41,44 +41,53 @@ export function main() {
 
         switch (opcao) {
             case 1:
-                console.log("\n\nCriar Conta\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nCriar Conta\n\n", colors.reset);
                 keyPress()
                 break;
             case 2:
-                console.log("\n\nListar todas as Contas\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nListar todas as Contas\n\n", colors.reset);
                 keyPress()
                 break;
             case 3:
-                console.log("\n\nConsultar dados da Conta - por número\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nConsultar dados da Conta - por número\n\n", colors.reset);
                 keyPress()
                 break;
             case 4:
-                console.log("\n\nAtualizar dados da Conta\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nAtualizar dados da Conta\n\n", colors.reset);
                 keyPress()
                 break;
             case 5:
-                console.log("\n\nApagar uma Conta\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nApagar uma Conta\n\n", colors.reset);
                 keyPress()
                 break;
             case 6:
-                console.log("\n\nSaque\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nSaque\n\n", colors.reset);
                 keyPress()
                 break;
             case 7:
-                console.log("\n\nDepósito\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nDepósito\n\n", colors.reset);
                 keyPress()
                 break;
             case 8:
-                console.log("\n\nTransferência entre Contas\n\n");
+                console.log(colors.fg.whitestrong,
+                    "\n\nTransferência entre Contas\n\n", colors.reset);
                 keyPress()
                 break;
             default:
-                console.log("\nOpção Inválida!\n");
+                console.log(colors.fg.whitestrong,
+                    "\nOpção Inválida!\n", colors.reset);
                 keyPress()
                 break;
         }
 
-    } while (opcao !== 9);
+    } 
 }
 
 function sobre(): void {
