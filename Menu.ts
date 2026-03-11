@@ -101,41 +101,41 @@ export function main() {
         switch (opcao) {
             case 1:
                 console.log(colors.fg.whitestrong, "\n\nCriar Conta\n\n", colors.reset);
-                console.log("\n1 - Conta Corrente \n2 - Conta Poupança");
-                let opcaoConta = readlinesync.questionInt("Digite a opção desejada: ")
-                let conta: Conta;
-                conta = opcaoConta == 1 ? new ContaCorrente() : new ContaPoupanca();
-                conta.tipo = opcaoConta;
-                conta.titular = readlinesync.question("Digite o nome do Titular: ")
-                conta.agencia = readlinesync.questionInt("Digite a agencia: ")
-                conta.saldo = readlinesync.questionFloat("Digite o saldo inicial: ")
+                // console.log("\n1 - Conta Corrente \n2 - Conta Poupança");
+                // let opcaoConta = readlinesync.questionInt("Digite a opção desejada: ")
+                // let conta: Conta;
+                // conta = opcaoConta == 1 ? new ContaCorrente() : new ContaPoupanca();
+                // conta.tipo = opcaoConta;
+                // conta.titular = readlinesync.question("Digite o nome do Titular: ")
+                // conta.agencia = readlinesync.questionInt("Digite a agencia: ")
+                // conta.saldo = readlinesync.questionFloat("Digite o saldo inicial: ")
 
-                if (conta instanceof ContaCorrente) {
-                    conta.limite = readlinesync.questionInt("Digite o limite da conta: ")
-                }
-                if (conta instanceof ContaPoupanca) {
-                    conta.aniversario = readlinesync.questionInt("Digite o aniversário: ")
-                }
-                Contas.push(conta);
-                console.log("\nConta cadastrada com sucesso!")
+                // if (conta instanceof ContaCorrente) {
+                //     conta.limite = readlinesync.questionInt("Digite o limite da conta: ")
+                // }
+                // if (conta instanceof ContaPoupanca) {
+                //     conta.aniversario = readlinesync.questionInt("Digite o aniversário: ")
+                // }
+                // Contas.push(conta);
+                // console.log("\nConta cadastrada com sucesso!")
 
-                console.log(`\nO cliente ${conta.titular} foi adicionado com sucesso!`)
+                // console.log(`\nO cliente ${conta.titular} foi adicionado com sucesso!`)
                 keyPress()
                 break;
             case 2:
                 console.log(colors.fg.whitestrong, "\n\nListar todas as Contas\n\n", colors.reset);
-                for (let conta of Contas) {
-                    conta.visualizar();
-                    keyPress()
-                }
+                // for (let conta of Contas) {
+                //     conta.visualizar();
+                //     keyPress()
+                // }
                 break;
             case 3:
                 console.log(colors.fg.whitestrong, "\n\nConsultar dados da Conta - por número\n\n", colors.reset);
-                let buscaNumero = readlinesync.questionInt("Número da conta: ");
+                // let buscaNumero = readlinesync.questionInt("Número da conta: ");
 
-                let buscaConta = Contas.find(conta => conta.numero === buscaNumero);
+                // let buscaConta = Contas.find(conta => conta.numero === buscaNumero);
 
-                buscaConta ? buscaConta.visualizar() : console.log("Conta não encontrada!");
+                // buscaConta ? buscaConta.visualizar() : console.log("Conta não encontrada!");
 
                 keyPress()
                 break;
