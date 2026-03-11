@@ -14,44 +14,44 @@ export class Conta {
         this._saldo = saldo;
     }
 
-    public get numero() {
-        return this._numero;
+    public get numero(): number {
+        return this._numero
     }
 
-    public set numero(numero: number) {
-        this._numero = numero;
+    public set numero(valor: number) {
+        this._numero = valor;
     }
 
-    public get agencia() {
-        return this._agencia;
+    public get agencia(): number {
+        return this._agencia
     }
 
-    public set agencia(agencia: number) {
-        this._agencia = agencia;
+    public set agencia(valor: number) {
+        this._agencia = valor;
     }
 
-    public get tipo() {
-        return this._tipo;
+    public get tipo(): number {
+        return this._tipo
     }
 
-    public set tipo(tipo: number) {
-        this._tipo = tipo;
+    public set tipo(valor: number) {
+        this._tipo = valor;
     }
 
-    public get titular() {
-        return this._titular;
+    public get titular(): string {
+        return this._titular
     }
 
-    public set titular(titular: string) {
-        this._titular = titular;
+    public set titular(valor: string) {
+        this._titular = valor;
     }
 
-    public get saldo() {
-        return this._saldo;
+    public get saldo(): number {
+        return this._saldo
     }
 
-    public set saldo(saldo: number) {
-        this._saldo = saldo;
+    public set saldo(valor: number) {
+        this._saldo = valor;
     }
 
     public sacar(valor: number): boolean {
