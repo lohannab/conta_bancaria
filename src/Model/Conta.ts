@@ -1,6 +1,4 @@
-export class Conta {
-
-    private static proximoNumero: number = 1; //to ousando hehe
+export abstract class Conta {
 
     private _numero!: number;
     private _agencia!: number;
@@ -16,9 +14,7 @@ export class Conta {
     //     this._saldo = saldo;
     // }
 
-    constructor() {
-        this._numero = Conta.proximoNumero++;
-    };
+    constructor() { };
 
     public get numero(): number {
         return this._numero
@@ -74,6 +70,7 @@ export class Conta {
     public depositar(valor: number): void {
         this._saldo = this._saldo + valor;
     }
+
 
     public visualizar(): void {
 
